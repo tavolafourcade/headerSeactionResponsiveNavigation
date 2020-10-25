@@ -69,6 +69,10 @@ li a:hover {
   background: #2e363d;
 }
 
+.open-nav {
+  visibility: unset;
+}
+
 @media (min-width: 500px) {
   .open,
   .exit {
