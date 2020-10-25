@@ -26,13 +26,13 @@ a.logo {
 }
 
 nav {
-  visibility: hidden;
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   background: #1d2226;
   width: 66%;
+  visibility: hidden;
 }
 
 .exit {
@@ -67,4 +67,38 @@ li a {
 
 li a:hover {
   background: #2e363d;
+}
+
+@media (min-width: 500px) {
+  .open,
+  .exit {
+    display: none;
+  }
+
+  nav {
+    visibility: unset;
+    position: unset;
+    height: auto;
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    margin-top: auto;
+    width: auto;
+    float: right;
+    margin: 0;
+  }
+
+  ul li a {
+    color: #addbff;
+    display: block;
+    padding: 1em;
+  }
+
+  .active a {
+    color: white;
+  }
 }
